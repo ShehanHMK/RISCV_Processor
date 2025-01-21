@@ -28,7 +28,7 @@ This project involves implementing a **RISC-V ISA-based processor** on an **FPGA
 ## Data Path Architecture
 The following diagram illustrates the **data path** of the RISC-V processor:
 
-![Data Path](data_path.png)
+![Data Path](DATA_path2.png)
 
 ---
 > *Contributions are welcome! Feel free to submit issues and pull requests.*
