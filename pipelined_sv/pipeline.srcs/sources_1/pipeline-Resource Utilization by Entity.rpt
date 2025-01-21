@@ -1,0 +1,69 @@
+Resource Utilization by Entity report for pipeline
+Mon Jan 01 18:32:52 2024
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Resource Utilization by Entity
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Entity Name     ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |datapath                                ; 2456 (0)            ; 2295 (0)                  ; 14336       ; 0            ; 0       ; 0         ; 63   ; 0            ; |datapath                                                                                          ; datapath        ; work         ;
+;    |ALU:ALU_blk|                         ; 173 (173)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ALU:ALU_blk                                                                              ; ALU             ; work         ;
+;    |Data_mem:data_mem_blk|               ; 950 (950)           ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Data_mem:data_mem_blk                                                                    ; Data_mem        ; work         ;
+;    |EX_pipe:ex_pipe_blk|                 ; 12 (12)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|EX_pipe:ex_pipe_blk                                                                      ; EX_pipe         ; work         ;
+;    |ID_pipe:ID_pipe_blk|                 ; 5 (5)               ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ID_pipe:ID_pipe_blk                                                                      ; ID_pipe         ; work         ;
+;    |IF_pipe:IF_pipr_blk|                 ; 0 (0)               ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|IF_pipe:IF_pipr_blk                                                                      ; IF_pipe         ; work         ;
+;    |Imm_gen:Imm_gen_blk|                 ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Imm_gen:Imm_gen_blk                                                                      ; Imm_gen         ; work         ;
+;    |Instruction_mem:Instruction_mem_blk| ; 3 (3)               ; 0 (0)                     ; 14336       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Instruction_mem:Instruction_mem_blk                                                      ; Instruction_mem ; work         ;
+;       |altsyncram:Mux31_rtl_0|           ; 0 (0)               ; 0 (0)                     ; 14336       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Instruction_mem:Instruction_mem_blk|altsyncram:Mux31_rtl_0                               ; altsyncram      ; work         ;
+;          |altsyncram_ktv:auto_generated| ; 0 (0)               ; 0 (0)                     ; 14336       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Instruction_mem:Instruction_mem_blk|altsyncram:Mux31_rtl_0|altsyncram_ktv:auto_generated ; altsyncram_ktv  ; work         ;
+;    |Microprograming:microprograming|     ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Microprograming:microprograming                                                          ; Microprograming ; work         ;
+;    |Mux:Mux_blk|                         ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|Mux:Mux_blk                                                                              ; Mux             ; work         ;
+;    |bin2bcd:unit1|                       ; 97 (97)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bin2bcd:unit1                                                                            ; bin2bcd         ; work         ;
+;    |bin2bcd:unit2|                       ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bin2bcd:unit2                                                                            ; bin2bcd         ; work         ;
+;    |bin2bcd:unit3|                       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bin2bcd:unit3                                                                            ; bin2bcd         ; work         ;
+;    |branch_pre:branch_pre_blk|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|branch_pre:branch_pre_blk                                                                ; branch_pre      ; work         ;
+;    |mem_pipe:mem_pipe_blk|               ; 0 (0)               ; 71 (71)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mem_pipe:mem_pipe_blk                                                                    ; mem_pipe        ; work         ;
+;    |program_count:program_count_blk|     ; 13 (13)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|program_count:program_count_blk                                                          ; program_count   ; work         ;
+;    |register:register_blk|               ; 1063 (1063)         ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|register:register_blk                                                                    ; register        ; work         ;
+;    |ss:segment0|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment0                                                                              ; ss              ; work         ;
+;    |ss:segment1|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment1                                                                              ; ss              ; work         ;
+;    |ss:segment2|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment2                                                                              ; ss              ; work         ;
+;    |ss:segment3|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment3                                                                              ; ss              ; work         ;
+;    |ss:segment4|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment4                                                                              ; ss              ; work         ;
+;    |ss:segment5|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment5                                                                              ; ss              ; work         ;
+;    |ss:segment6|                         ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment6                                                                              ; ss              ; work         ;
+;    |ss:segment7|                         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ss:segment7                                                                              ; ss              ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+

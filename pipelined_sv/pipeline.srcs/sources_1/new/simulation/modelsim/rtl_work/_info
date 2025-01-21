@@ -1,0 +1,437 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/simulation/modelsim
+vAdder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1704019356
+!i10b 1
+!s100 G79B[5iH8_Fa2[lM]2X7]2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:[5h8<ORQQmNeSXA]n@^S3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1704004627
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Adder.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Adder.sv
+!i122 14
+L0 23 9
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1704019356.000000
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Adder.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work {+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new}
+Z10 tCvgOpt 0
+n@adder
+vALU
+R1
+R2
+!i10b 1
+!s100 f5^_7<hU72TMaEWe>PXB=2
+R3
+I>Z?6i[YJm3bnmf`4FK8EN3
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ALU.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ALU.sv
+!i122 13
+L0 23 34
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ALU.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u
+vbranch_pre
+R1
+R2
+!i10b 1
+!s100 H02?K2KCacM=4heQ^K>5h1
+R3
+Ih`eF<7K<Z3j;J]D<0kAMl3
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv
+!i122 12
+L0 23 19
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/branch_pre.sv|
+!i113 1
+R8
+R9
+R10
+vData_mem
+R1
+R2
+!i10b 1
+!s100 aTz@84MbF1;D@VhAVKHib0
+R3
+IWk1<11ej2]b[Xi;]KHb2Z1
+R4
+S1
+R0
+w1704019275
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv
+!i122 10
+L0 23 45
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Data_mem.sv|
+!i113 1
+R8
+R9
+R10
+n@data_mem
+vdatapath
+R1
+R2
+!i10b 1
+!s100 mKn6`9lN`Z<cOhYP_OLQc3
+R3
+IRMlPW8MHCbiz>TOZ9Y;JR1
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/datapath.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/datapath.sv
+!i122 11
+L0 23 296
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/datapath.sv|
+!i113 1
+R8
+R9
+R10
+vEX_pipe
+R1
+R2
+!i10b 1
+!s100 K:;XUS=i^g2b_O6EMedlK0
+R3
+IRU>Ckng`S<^hc<1N9G4Vh2
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv
+!i122 9
+L0 23 53
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/EX_pipe.sv|
+!i113 1
+R8
+R9
+R10
+n@e@x_pipe
+vID_pipe
+R1
+R2
+!i10b 1
+!s100 R11iSzjeDBP9=Ki]jX]PG3
+R3
+I?J3lCFicj1ZfW[NG>Sk]M0
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv
+!i122 8
+L0 23 73
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/ID_pipe.sv|
+!i113 1
+R8
+R9
+R10
+n@i@d_pipe
+vIF_pipe
+R1
+R2
+!i10b 1
+!s100 8FQZhPJb_E[Q?gHj_1Th]2
+R3
+I=80QejfBG3@h5DZN]R5Th1
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv
+!i122 7
+L0 23 26
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/IF_pipe.sv|
+!i113 1
+R8
+R9
+R10
+n@i@f_pipe
+vImm_gen
+R1
+R2
+!i10b 1
+!s100 OFOB0z<PM?]ONm210UWBZ0
+R3
+Ig_jc_j:KA[0<H2IdBWo5@0
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv
+!i122 6
+L0 23 41
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Imm_gen.sv|
+!i113 1
+R8
+R9
+R10
+n@imm_gen
+vInstruction_mem
+R1
+R2
+!i10b 1
+!s100 MGMgfl4@KUc=4[i1RDHda0
+R3
+I>^:FRPg^@KfN6_IcMC87N2
+R4
+S1
+R0
+Z11 w1704004628
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv
+!i122 5
+L0 23 28
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Instruction_mem.sv|
+!i113 1
+R8
+R9
+R10
+n@instruction_mem
+vmem_pipe
+R1
+R2
+!i10b 1
+!s100 [9j:HzThY<=^6VkAjCnhY3
+R3
+Ib`OMhJ:jnVSW2o@[XAcU`0
+R4
+S1
+R0
+R11
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv
+!i122 4
+L0 23 32
+R6
+r1
+!s85 0
+31
+Z12 !s108 1704019355.000000
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/mem_pipe.sv|
+!i113 1
+R8
+R9
+R10
+vMicroprograming
+R1
+Z13 !s110 1704019355
+!i10b 1
+!s100 ]lZBoKd:^_BWWi4eXdH6=3
+R3
+I4K6h5XYTW:K=755g6C6cC3
+R4
+S1
+R0
+w1704017362
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv
+!i122 3
+L0 23 137
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Microprograming.sv|
+!i113 1
+R8
+R9
+R10
+n@microprograming
+vMux
+R1
+R13
+!i10b 1
+!s100 j>3h1GQC95OkAJXM3Dl<L3
+R3
+IjL[?83CH?fnhbQJ=fFi3a3
+R4
+S1
+R0
+R11
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Mux.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Mux.sv
+!i122 2
+L0 23 14
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/Mux.sv|
+!i113 1
+R8
+R9
+R10
+n@mux
+vprogram_count
+R1
+R13
+!i10b 1
+!s100 R?`9>5_z70[=CR:F4c=CN1
+R3
+IIa2dL2fZ8zE@>FP>H6G_63
+R4
+S1
+R0
+R11
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/program_count.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/program_count.sv
+!i122 1
+L0 23 20
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/program_count.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/program_count.sv|
+!i113 1
+R8
+R9
+R10
+vregister
+R1
+R13
+!i10b 1
+!s100 1VKoZKjGofenREgU=geK82
+R3
+Il2_f_RWCZ:j>mzA36_Y5`1
+R4
+S1
+R0
+R11
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/register.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/register.sv
+!i122 0
+L0 23 30
+R6
+r1
+!s85 0
+31
+R12
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/register.sv|
+!i113 1
+R8
+R9
+R10
+vtestbench
+R1
+R2
+!i10b 1
+!s100 C[WXYFVk>lEPTJmVJO]gF2
+R3
+IXIzX?X>`Oo?Fak@an4P]91
+R4
+S1
+R0
+R5
+8D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new/testbench.sv
+FD:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new/testbench.sv
+!i122 15
+L0 23 93
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new|D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new/testbench.sv|
+!i113 1
+R8
+!s92 -sv -work work {+incdir+D:/ACA semester 5/Digital System Design/Pipeline processor design/pipeline_without_forwarding/pipeline/pipeline.srcs/sources_1/new/../../sim_1/new}
+R10

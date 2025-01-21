@@ -1,0 +1,50 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 12/29/2023 10:57:47 AM
+// Design Name: 
+// Module Name: Instruction_mem
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module Instruction_mem#(parameter inst_width=32,inst_space=10)(
+input logic [inst_width-1:0]pc,
+output logic [inst_width-1:0]instruction
+  );
+    
+    logic [inst_width-1:0] Inst_mem [2**(inst_space)-1:0];
+        
+    //testing the memcpy function
+    assign Inst_mem[0]   = 32'h00007033;//      and  r0,r0,r0           ALUResult = h0 = r0          
+    assign Inst_mem[1]   = 32'h00100093;//      addi r1,r0, 1           ALUResult = h1 = r1
+    assign Inst_mem[2]   = 32'b000000000011_00000_000_00010_0010011;
+    assign Inst_mem[3]   = 32'b000000000111_00000_000_00011_0010011;
+    assign Inst_mem[4]   = 32'b000000001001_00000_000_00100_0010011;
+    assign Inst_mem[5]   = 32'b000000001001_00000_000_00101_0010011;
+    assign Inst_mem[6]   = 32'b0000000_00001_00010_000_00011_0110011;
+    //assign Inst_mem[2]   = 32'b0000000_00010_00001_000_01000_1100011;
+    //assign Inst_mem[2]   = 32'b0000000_10000_00000_000_00111_1100111;
+    //assign Inst_mem[3]   = 32'b000000000001_00000_000_00011_0010011;
+    //assign Inst_mem[4]   = 32'b000000000001_00000_000_00100_0010011;
+    
+
+    
+    
+    always_comb begin
+        instruction<=Inst_mem[pc[31:2]];
+    end
+    
+endmodule
