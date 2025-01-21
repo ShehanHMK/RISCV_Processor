@@ -1,0 +1,17 @@
+# Current time Sun Nov 26 12:23:47 2023
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 006430e7. Traceback:
+# 0    0x006430e7: 'WinMain + 0xe9d57'
+# 1    0x0064ebd4: 'WinMain + 0xf5844'
+# 2    0x006503ef: 'WinMain + 0xf705f'
+# 3    0x0065060b: 'WinMain + 0xf727b'
+# 4    0x6b4639f1: 'TclNREvalObjv + 0x3e1'
+StackWalk failed 299
+# End of Stack Trace
+

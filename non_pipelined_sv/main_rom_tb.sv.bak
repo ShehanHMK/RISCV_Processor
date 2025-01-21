@@ -1,0 +1,43 @@
+
+module main_rom_tb;
+
+	timeunit      1ns ;
+	timeprecision 1ps ;
+
+	localparam Control_bits = 9 ;
+	
+	logic [6:0] addr ;
+	logic OE_N       ;
+
+	logic [Control_bits-1:0] ctrl_out ;
+	
+	
+	main_rom #(.Control_bits(Control_bits)) dut_main_rom(.*) ;
+
+
+	initial begin
+	      
+		OE_N = 1'b0;       // Output enabled
+
+		#1 addr = 'b0110011 ;  // R type 
+
+		#5 addr = 'b0010011 ;  // I type Alu
+		
+		#5 addr = 'b0000011 ;  // I type Load 
+		
+		#5 addr = 'b0100011 ;  // S type 
+		
+		#5 addr = 'b1100011 ;  // SB type
+		
+		#5 addr = 'b0000001 ;  // Not defined 
+		
+		#5 OE_N = 1'b1 ;    // Output disabled
+	
+
+		#10 $stop;
+
+
+	end
+
+
+endmodule

@@ -1,0 +1,14 @@
+package controls;
+
+	typedef enum logic [2:0] {
+	
+		I_TYPE,S_TYPE,B_TYPE,U_TYPE,J_TYPE
+	
+	} Imm_ex_op;
+	
+
+
+
+
+	
+endpackage

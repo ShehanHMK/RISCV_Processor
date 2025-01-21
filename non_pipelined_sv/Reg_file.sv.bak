@@ -1,0 +1,16 @@
+module Reg_file #(parameter Reg_size = 32 , Num_of_reg = 32 , Addr_bits = 5 )
+
+(   
+	//I/O Definitions
+	
+	input  logic clk,
+	input  logic WE,
+	
+	input  logic [4:0] A1,A2,A3,
+	
+	input  logic signed [Reg_size-1:0] WD,
+	
+	output logic signed [Reg_size-1:0] RD1,RD2
+	
+	
+);

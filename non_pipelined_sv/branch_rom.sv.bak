@@ -1,0 +1,58 @@
+
+
+module branch_rom #(parameter In_bits = 5)
+
+(
+	// I/O Definitions 
+	
+	input logic [In_bits-1:0] addr,
+
+	input logic OE_N ,
+
+	output logic out
+
+);
+
+	always_comb begin
+	
+		if(OE_N) begin
+			
+			out = 1'bz;
+		
+		end
+		
+		else begin
+	
+			unique case(addr) 
+			
+				'b10000 : out = 1'b1 ;
+				'b00001 : out = 1'b1 ;
+				'b01001 : out = 1'b1 ;
+				'b01100 : out = 1'b1 ;
+				'b10101 : out = 1'b1 ;
+				'b00101 : out = 1'b1 ;
+				
+				default : out = 1'b0 ;
+			
+			endcase
+			
+		end
+	
+	end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

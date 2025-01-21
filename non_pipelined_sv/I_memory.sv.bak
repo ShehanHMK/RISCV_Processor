@@ -1,0 +1,31 @@
+
+module I_memory #(parameter Word_size = 32 , Addr_bits = 32)
+
+(
+	// I/O Definitions 
+
+	input  logic [Addr_bits-1:0] addr,
+	
+	output logic [Word_size-1:0] instr
+
+
+
+);
+	
+	// Memory array definition
+	
+	logic [Word_size-1:0] Imem [0:1023] ;
+	
+	
+	assign instr = Imem[addr] ; 
+	
+	
+	initial begin 
+		
+		$readmemh("memhexfile.txt",Imem) ; 
+		
+	end
+	
+	
+	
+endmodule

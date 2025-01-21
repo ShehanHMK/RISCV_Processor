@@ -1,0 +1,35 @@
+
+module Sign_extender #(parameter CONTROL = 3 , Reg_size = 32)
+
+(  // I/O Definitions 
+
+	input  logic [CONTROL-1:0] Im_type,
+	
+	input  logic signed [24:0] Instr,
+
+	output logic signed [Reg_size-1:0] Im_out
+	
+
+);
+	
+	// Combinational Logic
+	
+	
+	always_comb begin
+	
+		unique case(Im_type) 
+		
+			'b000 : Im_out = {(Reg_size-12){Instr[24]},Instr[24:13]} ;                         						// I type 
+			'b001 : Im_out = {(Reg_size-12){Instr[24]},Instr[24:18],Instr[4:0]} ;              						// S type  
+			'b010 : Im_out = {(Reg_size-12){Instr[24]},Instr[0],Instr[23:18],Instr[4:1],1'b0}  						// B type
+			'b011 : Im_out = {Instr[24:5],(Reg_size-20){1'b0}} ;  									  						// U type
+			'b100 : Im_out = {(Reg_size-20){Instr[24]},Instr[12:5],Instr[13],Instr[23,18],Instr[17:14],1'b0} ; // J type
+	       
+			default:Im_out = Reg_size{1'b0} ; 
+	
+		endcase
+		
+	end
+	
+	
+endmodule

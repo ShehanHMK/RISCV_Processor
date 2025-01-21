@@ -1,0 +1,108 @@
+import controls::* ; 
+
+
+
+module control_unit #(parameter alu_rom_bits = 4 , main_rom_bits = 9) 
+(
+	// I/O Definitions
+
+	input  logic [6:0] opcode,
+	
+	input  logic [2:0] func3,
+	
+	input  logic funct7_5,
+
+	input  logic zero_flag , neg_flag ,
+	
+	input  logic oe_main, oe_alu ,
+
+	output logic pc_src ,
+	
+	output logic result_src ,  
+	
+	output mem_op mem_rdwr,     // Memory read and write
+	
+	output logic alu_src , 
+	
+	output logic regwrite ,
+	
+	output Imm_ex_op imm_src,
+
+	output alu_op alu_ctrl, 
+
+
+);  
+
+
+
+
+
+
+	// Internal Signal definitions
+
+	logic [main_rom_bits-1:0] main_rom_out ;
+	
+	logic [alu_rom_bits-1:0]  alu_rom_out  ; 
+	
+	logic [4:0] alu_addr ;
+	
+	logic [1:0] alu_op_sel ;
+	
+	assign alu_addr = {funct7_5,funct3} ; 
+	
+	
+	
+	main_rom #(.Control_bits(main_rom_bits)) MAIN_ROM(.addr(opcode),.OE_N(oe_main),.ctrl_out(main_rom_out)) ; 
+
+	alu_rom #(.Control_bits(alu_rom_bits))    ALU_ROM(.addr(alu_addr),.OE_N(oe_alu),.alu_ctrl_out(alu_rom_out)) ; 
+	
+	
+	assign alu_op_sel = main_rom_out[1:0] ; 
+	
+	
+	always_comb begin
+	
+		unique case(alu_op_sel)
+			
+			2'b00 : alu_ctrl = ADD ; 
+			
+			2'b01 : alu_ctrl = SUB ;
+		
+			2'b10 : alu_ctrl = alu_op'(alu_rom_out) ; 
+			
+			default : alu_ctrl = alu_op'(alu_rom_out) ; 
+		
+		
+		endcase
+	
+	
+	end
+	
+	
+	// Assigning values to output control lines
+	
+
+	//assign pc_src
+
+	assign result_src = main_rom_out[7] ;
+	
+	assign mem_rdwr = mem_op'(main_rom_out[6]) ;
+	
+	assign alu_src  = main_rom_out[5] ;
+	
+	assign regwrite = main_rom_out[4] ;
+	
+	assign imm_src  = Imm_ex_op'(main_rom_out[3:2]) ;
+	
+	assign 
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+endmodule

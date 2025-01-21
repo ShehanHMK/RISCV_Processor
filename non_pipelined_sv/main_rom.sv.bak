@@ -1,0 +1,44 @@
+
+module main_rom #(parameter Control_bits = 9)
+
+(
+	// I/O Definitions 
+	
+	input logic [6:0] addr,            // Address lines
+	
+	input logic OE_N,                            // Output enable  ( Active LOW )   
+
+	output logic [Control_bits - 1:0] ctrl_out   // Control lines  
+
+);
+
+
+	always_comb begin
+	
+		if(~OE_N) begin
+		
+			ctrl_out = {Control_bits{1'bz}} ;
+			
+		end
+		
+		else begin
+			
+			case(addr) 
+			
+				7'b0110011 : 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	end
+
+
+endmodule

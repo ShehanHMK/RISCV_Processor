@@ -1,0 +1,24 @@
+
+module mux_3 (parameter Input_size = 32)
+
+(
+	//	I/O Definitions
+	
+	input  logic [Input_size-1:0] y0 , y1 , y2 ,
+	
+	input  logic [1:0] sel ,
+	
+	output logic [Input_size-1:0] out
+
+
+); 
+
+	assign out = (sel==2'b00) ? y0 : (sel==2'b01) ? y1 : (sel==2'b10) ? y2 : {Input_size{1'b0}} ;
+	
+	
+	
+	
+	
+	
+	
+endmodule

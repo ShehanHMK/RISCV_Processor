@@ -1,0 +1,25 @@
+import controls::*;
+
+module sign_zero_extend #(parameter Word_size = 32 )
+
+(
+	input logic [Word_size-1:0] mem_word ;
+	input mem_op op;
+	input logic [1:0] byte_addr;
+	
+	output logic [Word_size-1:0] dout;
+);
+
+	case (op) 
+	
+		LW: dout = mem_word ;
+		
+		LB: dout = {{(Word_size-8){mem_word[8*byte_addr +:8][7]}},mem_word[8*byte_addr +:8]} ;
+
+
+
+
+
+
+
+endmodule

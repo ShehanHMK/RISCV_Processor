@@ -1,0 +1,35 @@
+
+module adder_tb;
+
+	localparam Bus_size = 32;
+	
+	logic [Bus_size-1:0] a,b ;
+
+	logic [Bus_size-1:0] out ; 
+
+
+	adder #(.Bus_size(Bus_size)) dut_adder(.*) ;
+	
+	
+	initial begin
+	
+		a = 0 ; b = 15 ; 
+		
+		#20 a=44 ; b=21 ;
+	
+	   #10 $stop;
+	
+	
+	
+	end
+
+
+
+
+
+
+
+
+
+
+endmodule

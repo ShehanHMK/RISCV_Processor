@@ -1,0 +1,2 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,alu:ALU|lpm_mult:Mult0|mult_7dt:auto_generated|mac_mult5,

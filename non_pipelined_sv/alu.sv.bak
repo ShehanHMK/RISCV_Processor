@@ -1,0 +1,44 @@
+import controls::* ;
+
+
+module alu #(parameter BUS_WIDTH = 32)
+(
+	//I/O Definitions
+	 
+	input  logic signed [BUS_WIDTH-1:0] a,        // Bus A
+	input  logic signed [BUS_WIDTH-1:0] b,        // Bus B
+
+	input  alu_op sel,    		 						 // Control Signals
+	
+	output logic signed [BUS_WIDTH-1:0] alu_out,  // Alu Result 
+	output logic zero,neg                         // Flags 
+
+
+);
+
+
+	// Combinational Circuit implementation
+
+	always_comb begin
+	
+		unique case(sel)
+		
+			ADD: alu_out = a + b ;          
+			SUB: alu_out = a - b ;
+			AND: alu_out = a & b ;
+			OR : alu_out = a | b ;
+			
+			default  alu_out = a ;
+		
+		endcase
+	
+	end
+		
+	assign zero = (alu_out == 0);                 //zero Flag       //&alu_out ;
+	
+	assign neg  = alu_out[BUS_WIDTH-1];           // Negative Flag
+	
+	
+
+endmodule 
+

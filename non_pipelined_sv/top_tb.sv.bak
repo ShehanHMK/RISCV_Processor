@@ -1,0 +1,36 @@
+
+
+module top_tb;
+
+	localparam Reg_size = 32 ;
+	
+	logic clk, rst , pcsrc_sel,
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

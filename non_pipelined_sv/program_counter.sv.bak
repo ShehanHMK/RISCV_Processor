@@ -1,0 +1,30 @@
+
+module program_counter #( Reg_size = 32 )
+
+	// I/O Definitions 
+(
+
+	input logic clk,
+	input logic en,
+	input logic [Reg_size-1:0] pc_next,
+	
+	output logic [Reg_size-1:0] pc_out
+
+
+
+); 
+
+	// Sequential Logic
+	
+	always_ff @(posedge clk) begin
+	
+		if(en) pc_out <= pc_next;
+		
+	
+	end
+	
+	
+	
+
+	
+endmodule

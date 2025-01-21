@@ -1,0 +1,31 @@
+module ss
+(
+	input logic [3:0] bcd,
+	
+	output logic [0:6] seg
+
+);
+
+
+	always_comb begin
+
+		case(bcd) 
+		
+			0:seg = 7'b;
+			1:seg = 7'b;
+			2:seg = 7'b;
+			3:seg = 7'b;
+			4:seg = 7'b;
+			5:seg = 7'b;
+			6:seg = 7'b;
+			7:seg = 7'b;
+			8:seg = 7'b;
+			9:seg = 7'b;
+			default: seg = 7'b
+			
+			
+		endcase
+
+	end
+	
+endmodule

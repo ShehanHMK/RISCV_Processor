@@ -1,0 +1,25 @@
+module TestBinaryToBCD;
+
+  logic [13:0] binary_input;
+  logic [15:0] bcd_output;
+
+  bin2bcd uut (
+    .binary_input(binary_input),
+    .bcd_output(bcd_output)
+  );
+
+  initial begin
+    // Test Case 1: Binary input is 0
+    binary_input = 14'b0000_0000_0000_00;
+    #10;
+
+    // Test Case 2: Binary input is 2738 (110110000010 in binary)
+    binary_input = 14'b0010_1101_1000_10;
+    #10;
+
+    // Add more test cases as needed
+
+    $stop;
+  end
+
+endmodule
